@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.main_box{
+    background-image:url("https://c.pxhere.com/photos/93/73/camera_the_background_black_dark_canon_photographer_photo_equipment_lens-883581.jpg!d");
+    background-size:cover;
+    height:100vh;
+    border:2px solid black;
+    display:flex;
+}
+.btn_one{
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    left:16px;
+    line-height:60px;
+}
+.sidebar_menu{
+    position:fixed;
+    width: 300px;
+    height:100vh;
+    background-color:rgba(255,255,255,0.1);
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+    left:-300px;
+    transition:all 0.3s linear;
+}
+.logo{
+    position:absolute;
+    width:100%;
+    line-height: 60px;
+    box-shadow:0 0 4px rgba(255,255,255,0.5);
+}
+.logo a{
+    position:absolute;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    /* top:40px; */
+    left:50px;
+}
+
+.menu{
+    position:absolute;
+    width:100%;
+    top:80px;
+}
+
+.menu li{
+    /* width:100%; */
+    color:white;
+    font-size:20px;
+    position:relative;
+    /* left:10px; */
+    list-style-type: none;
+    /* line-height: 60px; */
+    margin-top: 6px;
+    padding:14px 20px;
+}
+.menu ul li:hover{
+    box-shadow:0 0 4px rgba(255,255,255,0.5);
+}
+.main_box .sidebar_menu .menu a{
+    text-decoration:none;
+    color:white;
+    margin-left:4px;
+}
+#check{
+    position:absolute;
+    display:none;
+}
+.sidebar_menu .btn_two i{
+    color:grey;
+    position:absolute;
+    left:275px;
+    font-size:25px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.btn_two i:hover{
+    font-size:28px;
+}
+.btn_one i:hover{
+    font-size:34px;
+    cursor:pointer;
+}
+
+.sidebar_menu .social_media{
+    position:absolute;
+    bottom:20px;
+    left:25%;
+}
+
+.sidebar_menu .social_media i{
+    color:white;
+    opacity: 0.5;
+}
+.sidebar_menu .social_media i:hover{
+    font-size: 20px;
+    opacity:1;
+}
+#check:checked~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .btn_one{
+    opacity:0;
+}
